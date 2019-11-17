@@ -3,7 +3,7 @@ A flutter library containing useful animations for routing . <br/>
 <img src="./media/ios.gif" height="300" alt="ios" />
 <img src="./media/android.gif" height="300" alt="android" />
 
->> The animations are slow due to gif frame rate drop while recording .. in real life the performance will be much smoother
+> The animations are slow due to gif frame rate drop while recording .. in real life the performance will be much smoother
 
 # Usage
 ```dart
