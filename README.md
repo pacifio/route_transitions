@@ -1,7 +1,7 @@
 # Route transitions
 A flutter library containing useful animations for routing . <br/>
-<img src="./media/ios.gif" height="300" alt="ios" />
-<img src="./media/android.gif" height="300" alt="android" />
+<img src="https://raw.githubusercontent.com/pacifio/route_transitions/master/media/ios.gif" height="300" alt="ios" />
+<img src="https://raw.githubusercontent.com/pacifio/route_transitions/master/media/android.gif" height="300" alt="android" />
 
 > The animations are slow due to gif frame rate drop while recording .. in real life the performance will be much smoother
 
