@@ -3,8 +3,7 @@ import 'package:route_transitions/route_transitions.dart';
 
 void main() => runApp(MyApp());
 
-const TextStyle style =
-    TextStyle(fontFamily: "Poppins", fontSize: 22, color: Colors.black);
+const TextStyle style = TextStyle(fontSize: 22, color: Colors.white);
 
 class MyApp extends StatelessWidget {
   @override
@@ -33,13 +32,13 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blue,
         elevation: 8.0,
         title: Text(
           "Route animations",
           style: style,
         ),
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
       ),
       body: Container(
         margin: EdgeInsets.symmetric(horizontal: 50),
@@ -49,7 +48,7 @@ class _HomeState extends State<Home> {
           children: <Widget>[
             RaisedButton(
               elevation: 0.0,
-              color: Colors.black,
+              color: Colors.blue,
               child: Center(
                 child: Text(
                   "Slide from right",
@@ -58,13 +57,13 @@ class _HomeState extends State<Home> {
               ),
               onPressed: () {
                 Navigator.of(context).push(PageRouteTransition(
-                    animationType: AnimationType.SLIDE_RIGHT,
+                    animationType: AnimationType.slide_right,
                     builder: (context) => DashBoard()));
               },
             ),
             RaisedButton(
               elevation: 0.0,
-              color: Colors.black,
+              color: Colors.blue,
               child: Center(
                 child: Text(
                   "Slide from left",
@@ -73,13 +72,13 @@ class _HomeState extends State<Home> {
               ),
               onPressed: () {
                 Navigator.of(context).push(PageRouteTransition(
-                    animationType: AnimationType.SLIDE_LEFT,
+                    animationType: AnimationType.slide_left,
                     builder: (context) => DashBoard()));
               },
             ),
             RaisedButton(
               elevation: 0.0,
-              color: Colors.black,
+              color: Colors.blue,
               child: Center(
                 child: Text(
                   "Slide from up",
@@ -88,13 +87,13 @@ class _HomeState extends State<Home> {
               ),
               onPressed: () {
                 Navigator.of(context).push(PageRouteTransition(
-                    animationType: AnimationType.SLIDE_UP,
+                    animationType: AnimationType.slide_up,
                     builder: (context) => DashBoard()));
               },
             ),
             RaisedButton(
               elevation: 0.0,
-              color: Colors.black,
+              color: Colors.blue,
               child: Center(
                 child: Text(
                   "Slide from down",
@@ -103,13 +102,13 @@ class _HomeState extends State<Home> {
               ),
               onPressed: () {
                 Navigator.of(context).push(PageRouteTransition(
-                    animationType: AnimationType.SLIDE_DOWN,
+                    animationType: AnimationType.slide_down,
                     builder: (context) => DashBoard()));
               },
             ),
             RaisedButton(
               elevation: 0.0,
-              color: Colors.black,
+              color: Colors.blue,
               child: Center(
                 child: Text(
                   "Fade",
@@ -118,13 +117,13 @@ class _HomeState extends State<Home> {
               ),
               onPressed: () {
                 Navigator.of(context).push(PageRouteTransition(
-                    animationType: AnimationType.FADE,
+                    animationType: AnimationType.fade,
                     builder: (context) => DashBoard()));
               },
             ),
             RaisedButton(
               elevation: 0.0,
-              color: Colors.black,
+              color: Colors.blue,
               child: Center(
                 child: Text(
                   "Scale",
@@ -133,7 +132,7 @@ class _HomeState extends State<Home> {
               ),
               onPressed: () {
                 Navigator.of(context).push(PageRouteTransition(
-                    animationType: AnimationType.SACLE,
+                    animationType: AnimationType.scale,
                     builder: (context) => DashBoard()));
               },
             ),
@@ -152,17 +151,17 @@ class DashBoard extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
         title: Text(
           "Dashboard",
           style: style,
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blue,
         elevation: 8.0,
         leading: IconButton(
           icon: Icon(
             Icons.chevron_left,
-            color: Colors.black,
+            color: Colors.white,
           ),
           onPressed: () {
             Navigator.of(context).pop();

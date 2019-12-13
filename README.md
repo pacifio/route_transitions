@@ -1,28 +1,25 @@
 # Route transitions
 A flutter library containing useful animations for routing . <br/>
-<img src="https://raw.githubusercontent.com/pacifio/route_transitions/master/media/ios.gif" height="300" alt="ios" />
-<img src="https://raw.githubusercontent.com/pacifio/route_transitions/master/media/android.gif" height="300" alt="android" />
+<img src="https://raw.githubusercontent.com/pacifio/route_transitions/master/media/android.gif" height="300" alt="and" />
 
-> The animations are slow due to gif frame rate drop while recording .. in real life the performance will be much smoother
-
-# Usage
+## Usage
 ```dart
 import 'package:route_transitions/route_transitions.dart'; // Add this
 ...
 onPressed: () {
-  Navigator.of(context).push(PageRouteTransition( // Main animation class
-      animationType: AnimationType.SLIDE_UP, // This is the animation type and this is required
-      builder: (context) => DashBoard())); // Your page
+  Navigator.of(context).push(PageRouteTransition(
+      animationType: AnimationType.slide_up,
+      builder: (context) => DashBoard())); // this is required
 }
 ...
 ```
 
 ## PageRouteTransition class
-```animationType, builder, curves``` are the parameters . ```animationType, builder``` are required
+```animationType, builder, curves``` are the parameters . ```builder``` are required
 
 ```dart
 PageRouteTransition(
-  animationType: AnimationType.SLIDE_UP, // takes an animation type enum
+  animationType: AnimationType.slide_up, // takes an animation type enum
   builder: (context) => DashBoard(), // Takes a widget
   curves: Curves.easeInOut, // Optional curve
 );
@@ -35,7 +32,7 @@ PageRouteTransition(
 In order to slide from right use this
 ```dart
 PageRouteTransition(
-  animationType: AnimationType.SLIDE_RIGHT,
+  animationType: AnimationType.slide_right,
   builder: (context) => DashBoard(),
 );
 ```
@@ -44,7 +41,7 @@ PageRouteTransition(
 In order to slide from left use this
 ```dart
 PageRouteTransition(
-  animationType: AnimationType.SLIDE_LEFT,
+  animationType: AnimationType.slide_left,
   builder: (context) => DashBoard(),
 );
 ```
@@ -53,7 +50,7 @@ PageRouteTransition(
 In order to slide from up use this
 ```dart
 PageRouteTransition(
-  animationType: AnimationType.SLIDE_UP,
+  animationType: AnimationType.slide_up,
   builder: (context) => DashBoard(),
 );
 ```
@@ -62,7 +59,7 @@ PageRouteTransition(
 In order to slide from down use this
 ```dart
 PageRouteTransition(
-  animationType: AnimationType.SLIDE_DOWN,
+  animationType: AnimationType.slide_down,
   builder: (context) => DashBoard(),
 );
 ```
@@ -71,7 +68,7 @@ PageRouteTransition(
 In order to fade , use this
 ```dart
 PageRouteTransition(
-  animationType: AnimationType.FADE,
+  animationType: AnimationType.fade,
   builder: (context) => DashBoard(),
 );
 ```
@@ -80,7 +77,7 @@ PageRouteTransition(
 In order to scale , use this
 ```dart
 PageRouteTransition(
-  animationType: AnimationType.SCALE,
+  animationType: AnimationType.scale,
   builder: (context) => DashBoard(),
 );
 ```
@@ -267,5 +264,9 @@ class DashBoard extends StatelessWidget {
     );
   }
 }
-
 ```
+
+# Todos
+- [] Add ripple effect
+- [] Add rotating animations
+- [x] Fixed enum names

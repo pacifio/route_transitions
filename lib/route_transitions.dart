@@ -33,16 +33,16 @@ import 'package:flutter/foundation.dart';
 
 /// AnimationType defines what route transtition should take place
 enum AnimationType {
-  SLIDE_RIGHT,
-  SLIDE_LEFT,
-  SLIDE_UP,
-  SLIDE_DOWN,
-  FADE,
-  SACLE,
+  slide_right,
+  slide_left,
+  slide_up,
+  slide_down,
+  fade,
+  scale,
 }
 
 /// The main class that defines a custom Route transition / animation
-/// [AnimationType animationType] and [WidgetBuilder builder] are required
+/// [WidgetBuilder builder] is required
 /// [Curves curves] is optional , by default it is set to [Curves.easeInOut]
 class PageRouteTransition extends MaterialPageRoute {
   AnimationType animationType;
@@ -51,7 +51,7 @@ class PageRouteTransition extends MaterialPageRoute {
   PageRouteTransition(
       {@required WidgetBuilder builder,
       RouteSettings settings,
-      @required AnimationType animationType,
+      AnimationType animationType = AnimationType.slide_right,
       Cubic curves = Curves.easeInOut,
       bool maintainState = true,
       bool fullscreenDialog = false})
@@ -67,7 +67,7 @@ class PageRouteTransition extends MaterialPageRoute {
   Widget buildTransitions(BuildContext context, Animation<double> animation,
       Animation<double> secondaryAnimation, Widget child) {
     Animation customAnimation;
-    if (animationType == AnimationType.SLIDE_RIGHT) {
+    if (animationType == AnimationType.slide_right) {
       customAnimation = Tween(begin: Offset(1.0, 0.0), end: Offset(0.0, 0.0))
           .animate(CurvedAnimation(
         parent: animation,
@@ -77,7 +77,7 @@ class PageRouteTransition extends MaterialPageRoute {
         position: customAnimation,
         child: child,
       );
-    } else if (animationType == AnimationType.SLIDE_LEFT) {
+    } else if (animationType == AnimationType.slide_left) {
       customAnimation = Tween(begin: Offset(-1.0, 0.0), end: Offset(0.0, 0.0))
           .animate(CurvedAnimation(
         parent: animation,
@@ -87,7 +87,7 @@ class PageRouteTransition extends MaterialPageRoute {
         position: customAnimation,
         child: child,
       );
-    } else if (animationType == AnimationType.SLIDE_UP) {
+    } else if (animationType == AnimationType.slide_up) {
       customAnimation = Tween(begin: Offset(0.0, 1.0), end: Offset(0.0, 0.0))
           .animate(CurvedAnimation(
         parent: animation,
@@ -97,7 +97,7 @@ class PageRouteTransition extends MaterialPageRoute {
         position: customAnimation,
         child: child,
       );
-    } else if (animationType == AnimationType.SLIDE_DOWN) {
+    } else if (animationType == AnimationType.slide_down) {
       customAnimation = Tween(begin: Offset(0.0, -1.0), end: Offset(0.0, 0.0))
           .animate(CurvedAnimation(
         parent: animation,
@@ -107,7 +107,7 @@ class PageRouteTransition extends MaterialPageRoute {
         position: customAnimation,
         child: child,
       );
-    } else if (animationType == AnimationType.FADE) {
+    } else if (animationType == AnimationType.fade) {
       customAnimation = Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
         parent: animation,
         curve: curves,
@@ -116,7 +116,7 @@ class PageRouteTransition extends MaterialPageRoute {
         opacity: customAnimation,
         child: child,
       );
-    } else if (animationType == AnimationType.SACLE) {
+    } else if (animationType == AnimationType.scale) {
       customAnimation = Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
         parent: animation,
         curve: curves,

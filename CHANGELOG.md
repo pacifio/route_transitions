@@ -1,3 +1,7 @@
+## 1.0.2
+
+* Fixed enum names
+
 ## 1.0.1
 
 * Fixed gif links
