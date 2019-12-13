@@ -1,6 +1,6 @@
 # Route transitions
 A flutter library containing useful animations for routing . <br/>
-<img src="https://raw.githubusercontent.com/pacifio/route_transitions/master/media/media.gif" height="300" alt="and" />
+<img src="https://raw.githubusercontent.com/pacifio/route_transitions/master/media/media.gif" height="300" alt="android" />
 
 ## Usage
 ```dart
