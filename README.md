@@ -267,6 +267,6 @@ class DashBoard extends StatelessWidget {
 ```
 
 # Todos
-- [] Add ripple effect
-- [] Add rotating animations
+- [ ] Add ripple effect
+- [ ]Add rotating animations
 - [x] Fixed enum names
