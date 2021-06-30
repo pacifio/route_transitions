@@ -1,3 +1,6 @@
+## 1.0.3
+* Fixed example
+
 ## 1.0.2
 
 * Fixed enum names

@@ -46,9 +46,11 @@ class _HomeState extends State<Home> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            RaisedButton(
-              elevation: 0.0,
-              color: Colors.blue,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                elevation: 0.0,
+                primary: Colors.blue,
+              ),
               child: Center(
                 child: Text(
                   "Slide from right",
@@ -61,9 +63,11 @@ class _HomeState extends State<Home> {
                     builder: (context) => DashBoard()));
               },
             ),
-            RaisedButton(
-              elevation: 0.0,
-              color: Colors.blue,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                elevation: 0.0,
+                primary: Colors.blue,
+              ),
               child: Center(
                 child: Text(
                   "Slide from left",
@@ -76,9 +80,11 @@ class _HomeState extends State<Home> {
                     builder: (context) => DashBoard()));
               },
             ),
-            RaisedButton(
-              elevation: 0.0,
-              color: Colors.blue,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                elevation: 0.0,
+                primary: Colors.blue,
+              ),
               child: Center(
                 child: Text(
                   "Slide from up",
@@ -91,9 +97,11 @@ class _HomeState extends State<Home> {
                     builder: (context) => DashBoard()));
               },
             ),
-            RaisedButton(
-              elevation: 0.0,
-              color: Colors.blue,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                elevation: 0.0,
+                primary: Colors.blue,
+              ),
               child: Center(
                 child: Text(
                   "Slide from down",
@@ -106,9 +114,11 @@ class _HomeState extends State<Home> {
                     builder: (context) => DashBoard()));
               },
             ),
-            RaisedButton(
-              elevation: 0.0,
-              color: Colors.blue,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                elevation: 0.0,
+                primary: Colors.blue,
+              ),
               child: Center(
                 child: Text(
                   "Fade",
@@ -121,9 +131,11 @@ class _HomeState extends State<Home> {
                     builder: (context) => DashBoard()));
               },
             ),
-            RaisedButton(
-              elevation: 0.0,
-              color: Colors.blue,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                elevation: 0.0,
+                primary: Colors.blue,
+              ),
               child: Center(
                 child: Text(
                   "Scale",
