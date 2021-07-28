@@ -1,3 +1,8 @@
+## 2.0.0
+* Added null safety support
+* Custom animation builder
+* route transition as functions
+
 ## 1.0.3
 * Fixed example
 
