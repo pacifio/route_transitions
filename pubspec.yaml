@@ -1,7 +1,7 @@
 name: route_transitions
 description: A flutter library containing useful animations for routing .
 homepage: https://github.com/pacifio/route_transitions
-version: 2.0.0
+version: 2.0.1
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

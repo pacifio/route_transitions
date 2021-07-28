@@ -1,6 +1,6 @@
 # Route transitions
 
-<img src="./media/example.gif" height="400">
+<img src="https://raw.githubusercontent.com/pacifio/route_transitions/master/media/example.gif" height="400">
 
 Now supports latest dart null safety . This package has been rewritten to use friendly route functions to navigate even with your favourite route transition and ability to build custom animations with `tansitionBuilder` !
 
@@ -20,7 +20,7 @@ ElevatedButton(
 
 ## Friendly API
 
-<img src="./media/friendly.png">
+<img src="https://raw.githubusercontent.com/pacifio/route_transitions/master/media/friendly.png">
 
 For actual examples , check [example/lib/main.dart](https://github.com/pacifio/route_transitions/blob/master/example/lib/main.dart)
 

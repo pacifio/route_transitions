@@ -1,3 +1,6 @@
+## 2.0.1
+* Updated Readme
+
 ## 2.0.0
 * Added null safety support
 * Custom animation builder
